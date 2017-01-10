@@ -1,0 +1,41 @@
+{
+  "name": "texteditor_medium",
+  "version": "1.0.0",
+  "description": "medium like text editor using draft-js and its plugins.",
+  "main": "index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "start": "webpack-dev-server --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "draft-js": "^0.9.1",
+    "es6-promise": "^4.0.5",
+    "immutable": "^3.8.1",
+    "isomorphic-fetch": "^2.2.1",
+    "medium-draft": "^0.4.0",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
+    "react-medium-editor-es6": "^0.1.0",
+    "react-portal-tooltip": "^1.1.5",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.24.1",
+    "style-loader": "^0.13.1"
+  }
+}
