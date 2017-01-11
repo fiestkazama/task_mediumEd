@@ -4,7 +4,6 @@ import {Button} from 'react-bootstrap';
 import insertDataBlock from './insertDataBlock';
 
 import {
-  ImageSideButton,
   Block,
   addNewBlock
 
