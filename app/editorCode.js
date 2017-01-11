@@ -14,9 +14,9 @@ import {
   findLinkEntities
 
 } from 'medium-draft';
-
+/*
 import {polyfill} from 'es6-promise';
-import 'isomorphic-fetch';
+import 'isomorphic-fetch'; */
 
 import ImageButton from './assets/imageButton';
 import BreakButton from './assets/lineBreak';
@@ -62,7 +62,9 @@ export default class MyEditApp extends React.Component {
   /*this.state = {
     editorState: this._getPlaceholder()
   }*/
+  
   // Using refs to call focus on editor 
+  // This will be invoked immediately after component is mounted...
   componentDidMount() {
     this.refs.editor.focus();
   }
