@@ -12,12 +12,7 @@ import {
 
 export default class VideoButton extends React.Component {
 
-  static propTypes: {
-    setEditorState: PropTypes.func,
-    getEditorState: PropTypes.func
-  };
-
-  constructor(props) {
+   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
 
@@ -66,6 +61,5 @@ export default class VideoButton extends React.Component {
 
 VideoButton.propTypes = {
   setEditorState: PropTypes.func,
-  getEditorState: PropTypes.func,
-  close: PropTypes.func,
+  getEditorState: PropTypes.func
 };
