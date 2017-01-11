@@ -1,4 +1,4 @@
-//React and Bootstrap Imports
+//Imports
 import React from 'react';
 import {Panel} from 'react-bootstrap';
 import ToolTip from 'react-portal-tooltip'
@@ -40,7 +40,7 @@ export default class MyEditApp extends React.Component {
       component: BreakButton
     },
     {
-      title: 'Embedd',
+      title: 'video',
       component: VideoButton
     }
     
@@ -62,7 +62,7 @@ export default class MyEditApp extends React.Component {
   /*this.state = {
     editorState: this._getPlaceholder()
   }*/
-
+  // Using refs to call focus on editor 
   componentDidMount() {
     this.refs.editor.focus();
   }
