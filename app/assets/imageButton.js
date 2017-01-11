@@ -14,6 +14,7 @@ import 'isomorphic-fetch';
 
 export default class ImageButton extends ImageSideButton  {
 
+  //If doesn't work.. place it outside class..
   static propTypes: {
     setEditorState: PropTypes.func,
     getEditorState: PropTypes.func,
