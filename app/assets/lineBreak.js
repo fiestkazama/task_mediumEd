@@ -18,6 +18,8 @@ export default class BreakButton extends React.Component {
     this.onClick = this.onClick.bind(this);
   }
 
+  //Click on button Will add a block..
+  //Which will then return a break
   onClick() {
     this.props.setEditorState(addNewBlock(
       this.props.getEditorState(),
@@ -38,6 +40,7 @@ export default class BreakButton extends React.Component {
   }
 }
 
+// PropTypes...
 BreakButton.propTypes = {
   setEditorState: PropTypes.func,
   getEditorState: PropTypes.func,
