@@ -4,12 +4,18 @@ import {Button} from 'react-bootstrap';
 import insertDataBlock from './insertDataBlock';
 
 import {
+  ImageSideButton,
   Block,
   addNewBlock
 
 } from 'medium-draft';
 
 export default class VideoButton extends React.Component {
+
+  static propTypes: {
+    setEditorState: PropTypes.func,
+    getEditorState: PropTypes.func
+  };
 
   constructor(props) {
     super(props);
@@ -27,7 +33,14 @@ export default class VideoButton extends React.Component {
 
     const data = {src: src, type: "video", display: "small"};
 
-    this.props.onChange(insertDataBlock(this.props.editorState, data));
+    this.props.onChange(insertDataBlock(
+      this.props.setEditorState(addNewBlock(
+        this.props.getEditorState(),
+        Block.IMAGE, {
+          data
+        }
+    ))
+    ))
   }
 
   
